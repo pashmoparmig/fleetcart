@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="style.css">                    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+        <div id="load"> 
+            <div></div>
+        </div>
+
+
+        <div class="container-alert">
+            <!-- <div class="alertbox">
+                <span class="alertclose">&times;</span>
+                <h1>FleetCart</h1>
+                <i class="fa-regular fa-bell"></i>
+                <p>تم اضافة العنصر بنجاح</p>
+            </div> -->
+        </div>
+        
+
+
+        <header>
+            <div class="top_header">
+                <p>Welcome to FleetCart store</p>
+
+                <ul>
+                    <a href="#"><li><i class="fa fa-light fa-phone" style="color: #423ff5;"></i>Contact</li>|</a>
+                    
+                    <a href="#"><li><i class="fa fa-thin fa-shuffle" style="color: #423ff5;"></i> Compare</li>|</a>
+                    
+                    <a href="#"><li><i class="fa-solid fa-language"style="color: #423ff5;"></i> English</li>|</a>
+                    
+                    <!-- <a href="login.html"><li><i class="fa-solid fa-arrow-right-to-bracket"style="color: #423ff5;"></i> Login</li></a> -->
+                </ul>
+
+            </div>
+            <div class="mid_header" class="navbar" id="navbar">
+                <div class="logo">FleetCart</div>
+                <div class="search">
+                    <input placeholder="search for products">
+                    <select>
+                        <option>All Categories</option>
+                        <option value="">Men's Fashion</option>
+                        <option value="">Shirts</option>
+                        <option value="">Jackets</option>
+                        <option value="">Electronics</option>
+                    </select>
+                    <button>
+                        <i class="fa fa-light fa-magnifying-glass" style="color:#ffffff; font-size: 15px;"></i>
+                    </button>
+                </div>
+                <div class="twoicon">
+                    <div class="favo">
+                        <i class="fa fa-2x fa-regular fa-heart" ></i>
+                        <span>Favorites</span>
+                    </div>
+
+
+                    <div class="pris" >
+                        <i class="fa fa-thin fa-cart-arrow-down fa-2x"></i>
+                        <span class="length_items">0</span>
+                        <span id="total_cart_price"></span>
+                    </div>
+                    <ul class="carts_products"></ul>
+                </div>
+            </div>
+            <div class="end_header">
+                <div>
+                    <p>All Categories 
+                    </p>                        
+                    <i class="fa fa-solid fa-bars" style="color: #ffffff;"></i>
+
+                </div>            
+                <nav class="nav_header">
+                    <ul>
+                        <li>Shop</li>
+                        <li>Brands</li>
+                        <li>About Us</li>
+                        <li>Terms Of Use</li>
+                        <li>Faq</li>
+                        <li>Buy Theme</li>
+                    </ul>
+                </nav>
+
+            </div>            
+            <!-- <div class="end_header"></div> -->
+            <section class="allslider">
+                <div class="left_slider">
+                    <ul>
+                        <li><i class="fa-solid fa-tag fa-rotate-90"style="color: blue;"></i> Electronics</li>
+                        <li><i class="fa-solid fa-tag fa-rotate-90"style="color: blue;"></i> Mens Fashion</li>
+                        <li><i class="fa-solid fa-tag fa-rotate-90"style="color: blue;"></i> Laptops</li>
+                        <li><i class="fa-solid fa-tag fa-rotate-90"style="color: blue;"></i> Mobiles</li>
+                        <li><i class="fa fa-solid fa-tag fa-rotate-90"style="color:blue"></i> Consumer Electronic</li>
+                        <li><i class="fa-solid fa-tag fa-rotate-90"style="color: blue;"></i> Television</li>
+                    </ul>
+                </div>
+                <div class="midel_slider">
+                    <!-- <img src="img/yl6rNkswnKQzh7mouQ0HpagRLwBpnq3Mt9LZMRak.png"> -->
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext"><button>Shop Now</button></div>
+                          <img src="img/slider1.png" >
+                          <div class="text">% تخقيضات تصل الي 50 </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext"><button>Shop Now</button></div>
+                            <img src="img/slider2.png" >
+                            <div class="text">%احصل الان علي شحن مجانا 100</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext"><button>Shop Now</button></div>
+                          <img src="img/slider3.png" >
+                          <div class="text">اطلب الان ولا تتردد 24/7</div>
+                        </div>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+                        
+                </div>
+                <div class="right_slider">
+                    <div class="pnr1">
+                        <img src="img/slider-right.png">
+                    </div>
+                    <div class="pnr2">                    
+                        <img src="img/slider-right.png">
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <div class="motivation">
+            <div >
+                <i class="fa-solid fa-headset fa-2x" style="color:#423ff5"></i>
+                <h6>24/7 SUPPORT</h6>
+                <p>Support every time</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck fa-2x" style="color:#423ff5"></i>
+                <h6>FREE SHIPPING</h6>
+                <p>Order over $100</p>
+            </div>
+            <div>   
+                <i class="fa-regular fa-calendar-minus fa-2x" style="color:#423ff5"></i>
+                <h6>30 DAYS RETURN</h6>
+                <p>30 days guarantee</p>
+            </div>
+        </div>
+        <div class="panar_category">
+            <ul>
+                <li>
+                    <div><img src="img/lap1.png"></div>
+                    <span>laptop</span>
+                </li>
+                <li>
+                    <div><img src="img/phon1.jpeg"></div>
+                    <span>Mobile</span>
+                </li>
+                <li>
+                    <div><img src="img/tab1.jpeg"></div>
+                    <span>Tablet</span>
+                </li>
+                <li>
+                    <div><img src="img/wach1.jpeg"></div>
+                    <span>watch</span>
+                </li>
+                <li>
+                    <div><img src="img/fashion.jpeg"></div>
+                    <span>fashion</span>
+                </li>
+                <li>
+                    <div><img src="img/tv1.png"></div>
+                    <span>tv</span>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="slid_pro1">
+
+
+            <!-- <div class="pro_cart1">
+
+                <div class="img_card">
+                    <img src="img/lap.jpeg"> 
+
+                    <span class="mini_top_icon">
+                        <div><i class="fa-regular fa-heart"></i></div>
+                        <div><i class="fa-solid fa-shuffle"></i></div>
+                    </span>
+
+                </div>
+
+                <div class="descr_card">
+                    <div class="pro_rates"><span class="pro_rates_stars">*****</span><span class="pro_rates_number">(5)</span></div>
+                    <h6 class="pro_nam">Dell XPS 13 9380, 13.3" 4K UHD (3840X2160) Multi- eewwrwwew we ewe we wewewew ew</h6>
+                    <span class="new_and_old_pric">
+                        <h6 class="pro_price1">$1300</h6> 
+                        <span class="pro_price1_old">$1500</span>
+                    </span>
+                </div>        
+
+                <div class="btn_card">
+                    <div>ADD TO CART</div>
+                </div>
+
+                < !-- <div class="btn_card_pri_2">
+                    <h6 class="pro_price2">$1300.99</h6>
+                </div> -- >
+            </div>  -->
+
+        </div>
+
+
+        <div class="pannar1">
+            <img src="img/pannar1.png">
+        </div>
+
+
+        <div class="best_deals">
+            <div class="hot_pro"></div>
+
+
+                             <!-- hot gallary SECTION 1 -->
+
+            <div class="hot_gallary1">
+                    <div class="gallary_top_section">
+                        <h4>Backpacks</h4>
+                        <button>></button>
+                        <button><</button>
+                    </div>
+
+                    <!-- <div class="hot_gallary_pro"> -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (99)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (99)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (99)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (99)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (99)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                    <!-- </div>   -->
+
+            </div>
+                                     <!-- end gallary SECTION 1 -->
+
+                             <!-- hot gallary SECTION 2 -->
+
+            <div class="hot_gallary2">
+                    <div class="gallary_top_section">
+                        <h4>Backpacks</h4>
+                        <button>></button>
+                        <button><</button>
+                    </div>
+
+                    <!-- <div class="hot_gallary_pro"> -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                    <!-- </div>   -->
+
+            </div>
+                                     <!-- end gallary SECTION 2 -->
+
+
+
+
+
+                             <!-- hot gallary SECTION 3 -->
+
+            <div class="hot_gallary3">
+                    <div class="gallary_top_section">
+                        <h4>watches</h4>
+                        <button>></button>
+                        <button><</button>
+                    </div>
+
+                    <!-- <div class="hot_gallary_pro"> -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                                                <!-- start hot gallary product section -->
+
+                        <div class="gallary_content_product">
+                            <div class="gallary_pro_img"><img src="img/wach1.jpeg"></div>
+                            <div class="gallary_pro_nam">Apple Watch Series 3 Gps, 42mm - space= Apple Watch Series 3 Gps, 42mm - space</div>
+                            <div class="gallary_pro_pris">
+                                    <div class="gallary_pro_newpris">$990.99</div> 
+                                    <div class="gallary_pro_oldpris">$999.99</div> 
+                            </div>
+                            <div class="gallary_pro_reat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (9)
+                            </div>
+
+                        </div>
+                                            <!-- end hot gallary product section -->
+
+
+                    <!-- </div>   -->
+
+            </div>
+                                     <!-- end gallary SECTION 3 -->
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <div class="div_contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone" style="color: blue;"></i> +2 01114606624</li>
+                    <li><i class="fa-regular fa-envelope"style="color: blue;"></i> admin@fleetcart.test</li>
+                    <li><i class="fa-regular fa-map"style="color: blue;"></i> Dhaka, Mohammadpur</li>
+                </ul>
+
+                <ul id="social_media">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+
+            </div>
+            <div class="div_account">
+                <h4>My Account</h4>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>My Orders </li>
+                    <li>My Reviews </li>
+                    <li>My Profile </li>
+                </ul>
+            </div>
+            <div class="div_services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Return Policy</li>
+                    <li>FAQ</li>
+                    <li>Privacy & Policy</li>
+                    <li>Terms Of Use </li>
+                </ul>
+            </div>
+            <div class="div_information">
+                <h4>Information</h4>
+                <ul>
+                    <li>New Arrivals</li>
+                    <li>Specials</li>
+                    <li>Hot Deals</li>
+                    <li>Backpacks</li>
+                    <li>Men's Fashion</li>
+                </ul>
+            </div>
+            <div class="div_tags">
+                <h4>Tags</h4>
+                <ul>
+                    <li>Accessories</li>
+                    <li>Electronics</li>
+                    <li>Entertainment</li>
+                    <li>Fashion</li>
+                    <li>Gadgets </li>
+                    <li>Hot deals </li>
+                    <li>Lifestyle </li>
+                    <li>Smartphone </li>
+                </ul>
+                
+            </div>
+        </div>
+
+
+        <div class="end_footer">
+            <p>Copyright © FleetCart 2023. All rights reserved.</p>
+            <img src="img/visa.png">
+        </div>
+    </body>
+    <script src='login.js'></script>
+    <script src='index.js'></script>
+</html>

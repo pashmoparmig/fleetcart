@@ -1,0 +1,87 @@
+.login_div{
+    width: 45%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    /* background-color: azure; */
+}
+.login_div form{
+    width: 100%;
+    /* height: 400px; */
+    display: block;
+    padding-bottom: 50px;
+}
+.login_div h2 {
+    width: 80px;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+.login_div form input{
+    width: 95%;
+    height:40px;
+    padding: 5px 15px ;
+    display: inline;
+    overflow: hidden;
+}
+.top_label{
+    width: 150px;
+    margin:20px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+    /* display: inline-block; */
+    margin-top: 20px;
+    float: left;
+}
+.Remember_check{
+    margin:20px 20px 30px 10px;
+    display: inline-block;
+    color: #8f8f8f;
+}
+form a{
+    float: right;
+    margin-top: 20px;
+    color: #8f8f8f;
+}
+.login_div span{
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* label{
+    display: inline;
+    width: 50px;
+} */
+
+
+
+
+.login_div form button{
+    width: 100%;
+    /* height:40px; */
+    padding: 10px 15px ;
+    display: block;
+    overflow: hidden;
+    background: #0055b8;
+    color: white;
+}
+.login_div button{
+    width: 100%;
+    /* height:40px; */
+    padding: 15px 15px ;
+    margin-bottom: 50px;
+    display: block;
+    color: #0055b8;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #0055b8;
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+}
